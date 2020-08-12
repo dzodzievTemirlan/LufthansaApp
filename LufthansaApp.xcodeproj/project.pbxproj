@@ -7,25 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7908388924E2B896007D2031 /* AirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908388724E2B896007D2031 /* AirportsViewController.swift */; };
+		7908388A24E2B896007D2031 /* AirportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7908388824E2B896007D2031 /* AirportsViewController.xib */; };
+		7908388E24E2B8C4007D2031 /* AirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908388D24E2B8C4007D2031 /* AirportsModel.swift */; };
+		7908389024E2B8CD007D2031 /* AirportsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908388F24E2B8CD007D2031 /* AirportsPresenter.swift */; };
+		7908389424E2F0E7007D2031 /* AirportsVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */; };
+		7908389724E2F100007D2031 /* AirportsVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */; };
+		7908389924E2F187007D2031 /* AirportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389824E2F187007D2031 /* AirportsCell.swift */; };
+		7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389A24E2FDD8007D2031 /* MapViewController.swift */; };
+		790838A124E2FEE6007D2031 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790838A024E2FEE6007D2031 /* MapViewController.xib */; };
+		79A5A62024E2FF38004B5FBB /* NearesAirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */; };
+		79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62224E2FF58004B5FBB /* MapPresenter.swift */; };
 		79CFE18024E006B00012837F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE17F24E006B00012837F /* AppDelegate.swift */; };
 		79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18124E006B00012837F /* SceneDelegate.swift */; };
-		79CFE18424E006B00012837F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18324E006B00012837F /* ViewController.swift */; };
-		79CFE18724E006B00012837F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE18524E006B00012837F /* Main.storyboard */; };
+		79CFE18424E006B00012837F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18324E006B00012837F /* MenuViewController.swift */; };
 		79CFE18A24E006B00012837F /* LufthansaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */; };
 		79CFE18C24E006B30012837F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE18B24E006B30012837F /* Assets.xcassets */; };
 		79CFE18F24E006B30012837F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE18D24E006B30012837F /* LaunchScreen.storyboard */; };
+		79CFE19B24E08B750012837F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE19A24E08B750012837F /* Router.swift */; };
+		79CFE1D124E12E060012837F /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1D024E12E060012837F /* MenuPresenter.swift */; };
+		79CFE1D324E12E9D0012837F /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1D224E12E9D0012837F /* Builder.swift */; };
+		79CFE1D524E12FAD0012837F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1D424E12FAD0012837F /* MenuView.xib */; };
+		79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1DF24E14FDE0012837F /* CountriesModel.swift */; };
+		79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E124E15C490012837F /* MenuCell.swift */; };
+		79CFE1E424E15EBA0012837F /* MenuVC+CVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */; };
+		79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */; };
+		79CFE1E924E1725C0012837F /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E824E1725B0012837F /* CountriesViewController.swift */; };
+		79CFE1EE24E1729C0012837F /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1ED24E1729C0012837F /* CountriesPresenter.swift */; };
+		79CFE1F124E172B20012837F /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1F024E172B20012837F /* CountriesView.xib */; };
+		79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F224E19EC60012837F /* NetworkRequest.swift */; };
+		79CFE1F524E1AE270012837F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F424E1AE270012837F /* CountryCell.swift */; };
+		79CFE1F724E1AE780012837F /* CountriesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */; };
+		79CFE1FA24E2839C0012837F /* CountriesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */; };
+		79CFE1FD24E28A2B0012837F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1FB24E28A2B0012837F /* CitiesViewController.swift */; };
+		79CFE1FE24E28A2B0012837F /* CitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1FC24E28A2B0012837F /* CitiesViewController.xib */; };
+		79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20124E28A5D0012837F /* CitiesPresenter.swift */; };
+		79CFE20424E28A750012837F /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20324E28A750012837F /* CitiesModel.swift */; };
+		79CFE20824E2A4810012837F /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20724E2A4810012837F /* CityCell.swift */; };
+		79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */; };
+		79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7908388724E2B896007D2031 /* AirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewController.swift; sourceTree = "<group>"; };
+		7908388824E2B896007D2031 /* AirportsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportsViewController.xib; sourceTree = "<group>"; };
+		7908388D24E2B8C4007D2031 /* AirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsModel.swift; sourceTree = "<group>"; };
+		7908388F24E2B8CD007D2031 /* AirportsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsPresenter.swift; sourceTree = "<group>"; };
+		7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+TVDataSource.swift"; sourceTree = "<group>"; };
+		7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+TVDelegate.swift"; sourceTree = "<group>"; };
+		7908389824E2F187007D2031 /* AirportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsCell.swift; sourceTree = "<group>"; };
+		7908389A24E2FDD8007D2031 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		790838A024E2FEE6007D2031 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearesAirportsModel.swift; sourceTree = "<group>"; };
+		79A5A62224E2FF58004B5FBB /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		79CFE17C24E006B00012837F /* LufthansaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CFE17F24E006B00012837F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CFE18124E006B00012837F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79CFE18324E006B00012837F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79CFE18624E006B00012837F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79CFE18324E006B00012837F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		79CFE18924E006B00012837F /* LufthansaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LufthansaApp.xcdatamodel; sourceTree = "<group>"; };
 		79CFE18B24E006B30012837F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79CFE18E24E006B30012837F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79CFE19024E006B30012837F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CFE19A24E08B750012837F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		79CFE1D024E12E060012837F /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		79CFE1D224E12E9D0012837F /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		79CFE1D424E12FAD0012837F /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		79CFE1DF24E14FDE0012837F /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
+		79CFE1E124E15C490012837F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuVC+CVDataSource.swift"; sourceTree = "<group>"; };
+		79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuVC+CVDelegate.swift"; sourceTree = "<group>"; };
+		79CFE1E824E1725B0012837F /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		79CFE1ED24E1729C0012837F /* CountriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
+		79CFE1F024E172B20012837F /* CountriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesView.xib; sourceTree = "<group>"; };
+		79CFE1F224E19EC60012837F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		79CFE1F424E1AE270012837F /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+TVDataSource.swift"; sourceTree = "<group>"; };
+		79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+TVDelegate.swift"; sourceTree = "<group>"; };
+		79CFE1FB24E28A2B0012837F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		79CFE1FC24E28A2B0012837F /* CitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesViewController.xib; sourceTree = "<group>"; };
+		79CFE20124E28A5D0012837F /* CitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPresenter.swift; sourceTree = "<group>"; };
+		79CFE20324E28A750012837F /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
+		79CFE20724E2A4810012837F /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDataSource.swift"; sourceTree = "<group>"; };
+		79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +103,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7908388B24E2B89B007D2031 /* AirportsScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				7908389224E2B8D9007D2031 /* Model */,
+				7908388C24E2B8B8007D2031 /* View */,
+				7908389124E2B8D2007D2031 /* Presenter */,
+				7908389524E2F0EB007D2031 /* Extensions */,
+			);
+			path = AirportsScreenModule;
+			sourceTree = "<group>";
+		};
+		7908388C24E2B8B8007D2031 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7908388724E2B896007D2031 /* AirportsViewController.swift */,
+				7908389824E2F187007D2031 /* AirportsCell.swift */,
+				7908388824E2B896007D2031 /* AirportsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7908389124E2B8D2007D2031 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7908388F24E2B8CD007D2031 /* AirportsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7908389224E2B8D9007D2031 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7908388D24E2B8C4007D2031 /* AirportsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7908389524E2F0EB007D2031 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */,
+				7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7908389C24E2FDDE007D2031 /* MapScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				79A5A62124E2FF3C004B5FBB /* Model */,
+				79A5A61E24E2FF1A004B5FBB /* View */,
+				79A5A62424E2FF5B004B5FBB /* Presenter */,
+			);
+			path = MapScreenModule;
+			sourceTree = "<group>";
+		};
+		79A5A61E24E2FF1A004B5FBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7908389A24E2FDD8007D2031 /* MapViewController.swift */,
+				790838A024E2FEE6007D2031 /* MapViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79A5A62124E2FF3C004B5FBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79A5A62424E2FF5B004B5FBB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79A5A62224E2FF58004B5FBB /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		79CFE17324E006AF0012837F = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +203,191 @@
 		79CFE17E24E006B00012837F /* LufthansaApp */ = {
 			isa = PBXGroup;
 			children = (
-				79CFE17F24E006B00012837F /* AppDelegate.swift */,
-				79CFE18124E006B00012837F /* SceneDelegate.swift */,
-				79CFE18324E006B00012837F /* ViewController.swift */,
-				79CFE18524E006B00012837F /* Main.storyboard */,
+				79CFE19E24E08EDE0012837F /* Router */,
+				79CFE19F24E08EE50012837F /* Builder */,
+				79CFE1A024E08EF00012837F /* MenuScreenModule */,
+				79CFE1EA24E172640012837F /* CountriesScreenModule */,
+				79CFE1FF24E28A310012837F /* CitiesScreenModule */,
+				7908388B24E2B89B007D2031 /* AirportsScreenModule */,
+				7908389C24E2FDDE007D2031 /* MapScreenModule */,
+				79CFE1D824E13B510012837F /* ServiceLayers */,
+				79CFE1A324E08F1F0012837F /* Delegates */,
 				79CFE18B24E006B30012837F /* Assets.xcassets */,
 				79CFE18D24E006B30012837F /* LaunchScreen.storyboard */,
 				79CFE19024E006B30012837F /* Info.plist */,
 				79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */,
 			);
 			path = LufthansaApp;
+			sourceTree = "<group>";
+		};
+		79CFE19E24E08EDE0012837F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE19A24E08B750012837F /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		79CFE19F24E08EE50012837F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1D224E12E9D0012837F /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		79CFE1A024E08EF00012837F /* MenuScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1A124E08F0C0012837F /* View */,
+				79CFE1A224E08F100012837F /* Presenter */,
+				79CFE1E524E15EBF0012837F /* Extensions */,
+			);
+			path = MenuScreenModule;
+			sourceTree = "<group>";
+		};
+		79CFE1A124E08F0C0012837F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE18324E006B00012837F /* MenuViewController.swift */,
+				79CFE1D424E12FAD0012837F /* MenuView.xib */,
+				79CFE1E124E15C490012837F /* MenuCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79CFE1A224E08F100012837F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1D024E12E060012837F /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		79CFE1A324E08F1F0012837F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE17F24E006B00012837F /* AppDelegate.swift */,
+				79CFE18124E006B00012837F /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		79CFE1D824E13B510012837F /* ServiceLayers */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1DE24E14EBA0012837F /* Network */,
+			);
+			path = ServiceLayers;
+			sourceTree = "<group>";
+		};
+		79CFE1DE24E14EBA0012837F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1F224E19EC60012837F /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		79CFE1E524E15EBF0012837F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */,
+				79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79CFE1EA24E172640012837F /* CountriesScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1EB24E172810012837F /* Model */,
+				79CFE1EC24E172870012837F /* View */,
+				79CFE1EF24E172A00012837F /* Presenter */,
+				79CFE1F824E1AE7D0012837F /* Extensions */,
+			);
+			path = CountriesScreenModule;
+			sourceTree = "<group>";
+		};
+		79CFE1EB24E172810012837F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1DF24E14FDE0012837F /* CountriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79CFE1EC24E172870012837F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1E824E1725B0012837F /* CountriesViewController.swift */,
+				79CFE1F024E172B20012837F /* CountriesView.xib */,
+				79CFE1F424E1AE270012837F /* CountryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79CFE1EF24E172A00012837F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1ED24E1729C0012837F /* CountriesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		79CFE1F824E1AE7D0012837F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */,
+				79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79CFE1FF24E28A310012837F /* CitiesScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE20524E28A790012837F /* Model */,
+				79CFE20024E28A4C0012837F /* View */,
+				79CFE20624E28A830012837F /* Presenter */,
+				79CFE20B24E2A4DF0012837F /* Extensions */,
+			);
+			path = CitiesScreenModule;
+			sourceTree = "<group>";
+		};
+		79CFE20024E28A4C0012837F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1FB24E28A2B0012837F /* CitiesViewController.swift */,
+				79CFE20724E2A4810012837F /* CityCell.swift */,
+				79CFE1FC24E28A2B0012837F /* CitiesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79CFE20524E28A790012837F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE20324E28A750012837F /* CitiesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79CFE20624E28A830012837F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE20124E28A5D0012837F /* CitiesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		79CFE20B24E2A4DF0012837F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */,
+				79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +400,7 @@
 				79CFE17824E006B00012837F /* Sources */,
 				79CFE17924E006B00012837F /* Frameworks */,
 				79CFE17A24E006B00012837F /* Resources */,
+				79CFE1D924E143910012837F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,36 +450,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				79CFE18F24E006B30012837F /* LaunchScreen.storyboard in Resources */,
+				79CFE1F124E172B20012837F /* CountriesView.xib in Resources */,
+				7908388A24E2B896007D2031 /* AirportsViewController.xib in Resources */,
+				79CFE1D524E12FAD0012837F /* MenuView.xib in Resources */,
+				790838A124E2FEE6007D2031 /* MapViewController.xib in Resources */,
 				79CFE18C24E006B30012837F /* Assets.xcassets in Resources */,
-				79CFE18724E006B00012837F /* Main.storyboard in Resources */,
+				79CFE1FE24E28A2B0012837F /* CitiesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79CFE1D924E143910012837F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79CFE17824E006B00012837F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */,
+				79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */,
+				79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */,
+				79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */,
+				79CFE1F524E1AE270012837F /* CountryCell.swift in Sources */,
+				7908389424E2F0E7007D2031 /* AirportsVC+TVDataSource.swift in Sources */,
+				7908389024E2B8CD007D2031 /* AirportsPresenter.swift in Sources */,
+				79CFE1FD24E28A2B0012837F /* CitiesViewController.swift in Sources */,
+				79A5A62024E2FF38004B5FBB /* NearesAirportsModel.swift in Sources */,
 				79CFE18A24E006B00012837F /* LufthansaApp.xcdatamodeld in Sources */,
-				79CFE18424E006B00012837F /* ViewController.swift in Sources */,
+				79CFE20824E2A4810012837F /* CityCell.swift in Sources */,
+				79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */,
+				79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */,
+				79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */,
+				7908388924E2B896007D2031 /* AirportsViewController.swift in Sources */,
+				7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */,
+				7908388E24E2B8C4007D2031 /* AirportsModel.swift in Sources */,
+				79CFE1E424E15EBA0012837F /* MenuVC+CVDataSource.swift in Sources */,
+				79CFE1FA24E2839C0012837F /* CountriesVC+TVDelegate.swift in Sources */,
+				79CFE19B24E08B750012837F /* Router.swift in Sources */,
+				79CFE1EE24E1729C0012837F /* CountriesPresenter.swift in Sources */,
+				79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */,
+				7908389924E2F187007D2031 /* AirportsCell.swift in Sources */,
+				79CFE1D324E12E9D0012837F /* Builder.swift in Sources */,
+				79CFE1E924E1725C0012837F /* CountriesViewController.swift in Sources */,
+				79CFE20424E28A750012837F /* CitiesModel.swift in Sources */,
+				79CFE18424E006B00012837F /* MenuViewController.swift in Sources */,
+				7908389724E2F100007D2031 /* AirportsVC+TVDelegate.swift in Sources */,
 				79CFE18024E006B00012837F /* AppDelegate.swift in Sources */,
 				79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */,
+				79CFE1F724E1AE780012837F /* CountriesVC+TVDataSource.swift in Sources */,
+				79CFE1D124E12E060012837F /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79CFE18524E006B00012837F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79CFE18624E006B00012837F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79CFE18D24E006B30012837F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6XYWNGKK3;
 				INFOPLIST_FILE = LufthansaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +675,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6XYWNGKK3;
 				INFOPLIST_FILE = LufthansaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
