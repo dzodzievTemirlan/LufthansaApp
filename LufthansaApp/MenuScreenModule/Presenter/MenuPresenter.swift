@@ -31,5 +31,4 @@ class MenuPresenter: MenuViewPresenterProtocol {
     func showAirportsViewController() {
         router?.showAirportsViewController()
     }
-    
 }

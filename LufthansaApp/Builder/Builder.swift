@@ -12,7 +12,8 @@ protocol BuilderProtocol {
     func createInitialViewController(router: Router) -> UIViewController
     func createCountriesViewController() -> UIViewController
     func createCitiesViewController() -> UIViewController
-    func createAirportsViewController() -> UIViewController
+    func createAirportsViewController(router: Router) -> UIViewController
+    func createMapViewController() -> UIViewController
 }
 
 class Builder: BuilderProtocol {
@@ -25,7 +26,8 @@ class Builder: BuilderProtocol {
     func createCountriesViewController() -> UIViewController {
         let view = CountriesViewController()
         let dataFetcher = NetworkRequest()
-        let presenter = CountriesPresenter(view: view, dataFetcher: dataFetcher )
+        let coreDataService = CoreDataService()
+        let presenter = CountriesPresenter(view: view, dataFetcher: dataFetcher, coreDataService: coreDataService)
         view.presenter = presenter
         return view
     }
@@ -36,10 +38,17 @@ class Builder: BuilderProtocol {
         view.presenter = presenter
         return view
     }
-    func createAirportsViewController() -> UIViewController {
+    func createAirportsViewController(router: Router) -> UIViewController {
         let view = AirportsViewController()
         let dataFetcher = NetworkRequest()
-        let presenter = AirportsPresenter(view: view, dataFetcher: dataFetcher)
+        let presenter = AirportsPresenter(view: view, dataFetcher: dataFetcher, router: router)
+        view.presenter = presenter
+        return view
+    }
+    func createMapViewController() -> UIViewController {
+        let view = MapViewController()
+        let dataFetcher = NetworkRequest()
+        let presenter = MapPresenter(view: view, dataFetcher: dataFetcher)
         view.presenter = presenter
         return view
     }

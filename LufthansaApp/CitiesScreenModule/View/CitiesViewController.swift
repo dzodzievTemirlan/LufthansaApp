@@ -18,12 +18,3 @@ class CitiesViewController: UIViewController {
         tableView.delegate = self
     }
 }
-
-extension CitiesViewController: CitiesViewProtocol {
-    func success() {
-        tableView.reloadData()
-    }
-    func failure(error: Error) {
-        print(error)
-    }
-}

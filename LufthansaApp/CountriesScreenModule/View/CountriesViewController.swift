@@ -16,14 +16,8 @@ class CountriesViewController: UIViewController {
         tableView.register(CountryCell.self, forCellReuseIdentifier: String(describing: CountryCell.self))
         tableView.dataSource = self
         tableView.delegate = self
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
 }
 
-extension CountriesViewController: CountriesViewProtocol {
-    func success() {
-        tableView.reloadData()
-    }
-    func failure(error: Error) {
-        print(error)
-    }
-}
+

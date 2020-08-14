@@ -18,6 +18,7 @@ protocol RouterProtocol: RouterMain {
     func showCountriesViewController()
     func showCititesViewController()
     func showAirportsViewController()
+    func showMapViewController()
 }
 
 class Router: RouterProtocol {
@@ -47,8 +48,14 @@ class Router: RouterProtocol {
     }
     func showAirportsViewController() {
         if let navigationController = navigationController {
-            guard let fourthVC = screenBuilder?.createAirportsViewController() else { return }
+            guard let fourthVC = screenBuilder?.createAirportsViewController(router: self) else { return }
             navigationController.pushViewController(fourthVC, animated: true)
+        }
+    }
+    func showMapViewController() {
+        if let navigationController = navigationController {
+            guard let fifthVC = screenBuilder?.createMapViewController() else { return }
+            navigationController.pushViewController(fifthVC, animated: true)
         }
     }
 }

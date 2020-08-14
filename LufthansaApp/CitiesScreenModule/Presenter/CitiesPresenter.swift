@@ -15,14 +15,14 @@ protocol CitiesViewProtocol: class {
 
 protocol CitiesViewPresenterProtocol: class {
     init (view: CitiesViewProtocol, dataFetcher: NetworkRequestProtocol)
-    var cities: CitiesModel? {get set}
+    var cities: [CityModel]? {get set}
     func getCities()
 }
 
 class CitiesPresenter: CitiesViewPresenterProtocol {
     weak var view: CitiesViewProtocol?
     var dataFetcher: NetworkRequestProtocol?
-    var cities: CitiesModel?
+    var cities: [CityModel]?
     required init(view: CitiesViewProtocol, dataFetcher: NetworkRequestProtocol) {
         self.view = view
         self.dataFetcher = dataFetcher
@@ -36,7 +36,7 @@ class CitiesPresenter: CitiesViewPresenterProtocol {
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let cities):
-                        self.cities = cities
+                        self.cities = cities?.cityResource.cities.city
                         self.view?.success()
                     case .failure(let error):
                         self.view?.failure(error: error)

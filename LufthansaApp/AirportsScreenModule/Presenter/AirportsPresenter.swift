@@ -13,17 +13,20 @@ protocol AirportsViewProtocol: class {
     func failure(error: Error)
 }
 protocol AirportsViewPresenterProtocol {
-    init (view: AirportsViewProtocol, dataFetcher: NetworkRequestProtocol)
+    init (view: AirportsViewProtocol, dataFetcher: NetworkRequestProtocol, router: RouterProtocol)
     func getAirports()
-    var airports: AirportsModel? {get set}
+    func showMap()
+    var airports: [AirportModel]? {get set}
 }
 class AirportsPresenter: AirportsViewPresenterProtocol {
     weak var view: AirportsViewProtocol?
     var dataFetcher: NetworkRequestProtocol?
-    var airports: AirportsModel?
-    required init(view: AirportsViewProtocol, dataFetcher: NetworkRequestProtocol) {
+    var airports: [AirportModel]?
+    var router: RouterProtocol?
+    required init(view: AirportsViewProtocol, dataFetcher: NetworkRequestProtocol, router: RouterProtocol) {
         self.view = view
         self.dataFetcher = dataFetcher
+        self.router = router
         getAirports()
     }
     func getAirports() {
@@ -32,14 +35,17 @@ class AirportsPresenter: AirportsViewPresenterProtocol {
                             model: AirportsModel.self,
                             complition: { (result) in
             DispatchQueue.main.async {
-                switch result {
-                case .success(let airports):
-                    self.airports = airports
-                    self.view?.success()
-                case .failure(let error):
-                    self.view?.failure(error: error)
-                }
+                    switch result {
+                    case .success(let airports):
+                        self.airports = airports?.airportsResource.airports.airport
+                        self.view?.success()
+                    case .failure(let error):
+                        self.view?.failure(error: error)
+                    }
             }
         })
     }
+    func showMap() {
+        router?.showMapViewController()
+      }
 }

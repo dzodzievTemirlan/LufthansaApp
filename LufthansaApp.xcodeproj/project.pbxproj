@@ -18,6 +18,14 @@
 		790838A124E2FEE6007D2031 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790838A024E2FEE6007D2031 /* MapViewController.xib */; };
 		79A5A62024E2FF38004B5FBB /* NearesAirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */; };
 		79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62224E2FF58004B5FBB /* MapPresenter.swift */; };
+		79A5A62924E446D4004B5FBB /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62824E446D4004B5FBB /* MapPin.swift */; };
+		79A5A62B24E5563A004B5FBB /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62A24E5563A004B5FBB /* CoreDataService.swift */; };
+		79A5A62E24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62D24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift */; };
+		79A5A63024E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62F24E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift */; };
+		79A5A63224E6681C004B5FBB /* MapVC+MapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63124E6681C004B5FBB /* MapVC+MapViewProtocol.swift */; };
+		79A5A63424E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */; };
+		79A5A63624E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */; };
+		79A5A63824E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */; };
 		79CFE18024E006B00012837F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE17F24E006B00012837F /* AppDelegate.swift */; };
 		79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18124E006B00012837F /* SceneDelegate.swift */; };
 		79CFE18424E006B00012837F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18324E006B00012837F /* MenuViewController.swift */; };
@@ -60,6 +68,14 @@
 		790838A024E2FEE6007D2031 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearesAirportsModel.swift; sourceTree = "<group>"; };
 		79A5A62224E2FF58004B5FBB /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		79A5A62824E446D4004B5FBB /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		79A5A62A24E5563A004B5FBB /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		79A5A62D24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		79A5A62F24E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
+		79A5A63124E6681C004B5FBB /* MapVC+MapViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapViewProtocol.swift"; sourceTree = "<group>"; };
+		79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+CountriesViewProtocol.swift"; sourceTree = "<group>"; };
+		79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+CitiesViewProtocol.swift"; sourceTree = "<group>"; };
+		79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+AirportsViewProtocol.swift"; sourceTree = "<group>"; };
 		79CFE17C24E006B00012837F /* LufthansaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CFE17F24E006B00012837F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CFE18124E006B00012837F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +161,7 @@
 			children = (
 				7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */,
 				7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */,
+				79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +172,7 @@
 				79A5A62124E2FF3C004B5FBB /* Model */,
 				79A5A61E24E2FF1A004B5FBB /* View */,
 				79A5A62424E2FF5B004B5FBB /* Presenter */,
+				79A5A62724E43419004B5FBB /* Extension */,
 			);
 			path = MapScreenModule;
 			sourceTree = "<group>";
@@ -164,6 +182,7 @@
 			children = (
 				7908389A24E2FDD8007D2031 /* MapViewController.swift */,
 				790838A024E2FEE6007D2031 /* MapViewController.xib */,
+				79A5A62824E446D4004B5FBB /* MapPin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +201,25 @@
 				79A5A62224E2FF58004B5FBB /* MapPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		79A5A62724E43419004B5FBB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79A5A62D24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift */,
+				79A5A62F24E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift */,
+				79A5A63124E6681C004B5FBB /* MapVC+MapViewProtocol.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79A5A62C24E5563F004B5FBB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				79A5A62A24E5563A004B5FBB /* CoreDataService.swift */,
+				79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		79CFE17324E006AF0012837F = {
@@ -215,7 +253,6 @@
 				79CFE18B24E006B30012837F /* Assets.xcassets */,
 				79CFE18D24E006B30012837F /* LaunchScreen.storyboard */,
 				79CFE19024E006B30012837F /* Info.plist */,
-				79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */,
 			);
 			path = LufthansaApp;
 			sourceTree = "<group>";
@@ -277,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				79CFE1DE24E14EBA0012837F /* Network */,
+				79A5A62C24E5563F004B5FBB /* CoreData */,
 			);
 			path = ServiceLayers;
 			sourceTree = "<group>";
@@ -338,6 +376,7 @@
 		79CFE1F824E1AE7D0012837F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */,
 				79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */,
 				79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */,
 			);
@@ -384,6 +423,7 @@
 		79CFE20B24E2A4DF0012837F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */,
 				79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */,
 				79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */,
 			);
@@ -486,26 +526,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A5A62B24E5563A004B5FBB /* CoreDataService.swift in Sources */,
 				79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */,
 				79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */,
 				79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */,
 				79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */,
 				79CFE1F524E1AE270012837F /* CountryCell.swift in Sources */,
+				79A5A63024E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift in Sources */,
 				7908389424E2F0E7007D2031 /* AirportsVC+TVDataSource.swift in Sources */,
 				7908389024E2B8CD007D2031 /* AirportsPresenter.swift in Sources */,
+				79A5A63824E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift in Sources */,
 				79CFE1FD24E28A2B0012837F /* CitiesViewController.swift in Sources */,
 				79A5A62024E2FF38004B5FBB /* NearesAirportsModel.swift in Sources */,
 				79CFE18A24E006B00012837F /* LufthansaApp.xcdatamodeld in Sources */,
 				79CFE20824E2A4810012837F /* CityCell.swift in Sources */,
+				79A5A63424E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift in Sources */,
 				79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */,
+				79A5A62924E446D4004B5FBB /* MapPin.swift in Sources */,
 				79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */,
 				79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */,
 				7908388924E2B896007D2031 /* AirportsViewController.swift in Sources */,
 				7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */,
 				7908388E24E2B8C4007D2031 /* AirportsModel.swift in Sources */,
 				79CFE1E424E15EBA0012837F /* MenuVC+CVDataSource.swift in Sources */,
+				79A5A62E24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				79CFE1FA24E2839C0012837F /* CountriesVC+TVDelegate.swift in Sources */,
 				79CFE19B24E08B750012837F /* Router.swift in Sources */,
+				79A5A63224E6681C004B5FBB /* MapVC+MapViewProtocol.swift in Sources */,
 				79CFE1EE24E1729C0012837F /* CountriesPresenter.swift in Sources */,
 				79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */,
 				7908389924E2F187007D2031 /* AirportsCell.swift in Sources */,
@@ -515,6 +562,7 @@
 				79CFE18424E006B00012837F /* MenuViewController.swift in Sources */,
 				7908389724E2F100007D2031 /* AirportsVC+TVDelegate.swift in Sources */,
 				79CFE18024E006B00012837F /* AppDelegate.swift in Sources */,
+				79A5A63624E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift in Sources */,
 				79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */,
 				79CFE1F724E1AE780012837F /* CountriesVC+TVDataSource.swift in Sources */,
 				79CFE1D124E12E060012837F /* MenuPresenter.swift in Sources */,

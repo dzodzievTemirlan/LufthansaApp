@@ -14,18 +14,20 @@ protocol CountriesViewProtocol: class {
 }
 
 protocol CountriesViewPresenterProtocol {
-    init(view: CountriesViewProtocol, dataFetcher: NetworkRequestProtocol)
+    init(view: CountriesViewProtocol, dataFetcher: NetworkRequestProtocol, coreDataService: CoreDataServiceProtocol)
     func getCountries()
-    var coutries: CountriesModel? {get set}
+    var coutries: [Country]? {get set}
 }
 
 class CountriesPresenter: CountriesViewPresenterProtocol {
-    var coutries: CountriesModel?
     weak var view: CountriesViewProtocol?
     var dataFetcher: NetworkRequestProtocol?
-    required init(view: CountriesViewProtocol, dataFetcher: NetworkRequestProtocol) {
+    var coutries: [Country]?
+    var coreDataService: CoreDataServiceProtocol?
+    required init(view: CountriesViewProtocol, dataFetcher: NetworkRequestProtocol, coreDataService: CoreDataServiceProtocol) {
         self.view = view
         self.dataFetcher = dataFetcher
+        self.coreDataService = coreDataService
         getCountries()
     }
     func getCountries() {
@@ -36,8 +38,9 @@ class CountriesPresenter: CountriesViewPresenterProtocol {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let countries):
-                    self.coutries = countries
+                    self.coutries = countries?.countryResourse.countries.country
                     self.view?.success()
+//                    self.coreDataService?.saveDataFromNetwork(to: .countries, that: self.coutries!)
                 case .failure(let error):
                     print(error)
                     self.view?.failure(error: error)

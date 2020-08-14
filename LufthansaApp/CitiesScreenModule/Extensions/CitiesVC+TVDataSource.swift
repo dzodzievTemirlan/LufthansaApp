@@ -10,7 +10,7 @@ import UIKit
 
 extension CitiesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let cities = presenter?.cities?.cityResource.cities.city else { return 0 }
+        guard let cities = presenter?.cities else { return 0 }
         return cities.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -21,7 +21,7 @@ extension CitiesViewController: UITableViewDataSource {
                             describing: CityCell.self),
                             for: indexPath) as? CityCell
                     else { fatalError() }
-        guard let cities = presenter?.cities?.cityResource.cities.city else { return cell}
+        guard let cities = presenter?.cities else { return cell}
         cell.cityLabel.text = cities[indexPath.row].names.name.empty
         return cell
     }
