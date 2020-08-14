@@ -40,7 +40,7 @@ class CountriesPresenter: CountriesViewPresenterProtocol {
                 case .success(let countries):
                     self.coutries = countries?.countryResourse.countries.country
                     self.view?.success()
-//                    self.coreDataService?.saveDataFromNetwork(to: .countries, that: self.coutries!)
+                self.coreDataService?.saveDataFromNetwork(to: .countries, that: self.coutries!)
                 case .failure(let error):
                     print(error)
                     self.view?.failure(error: error)

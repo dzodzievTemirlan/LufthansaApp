@@ -54,6 +54,7 @@
 		79CFE20824E2A4810012837F /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20724E2A4810012837F /* CityCell.swift */; };
 		79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */; };
 		79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */; };
+		BE89B97524E6D72900A1FC7A /* CountryManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		79CFE20724E2A4810012837F /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDataSource.swift"; sourceTree = "<group>"; };
 		79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDelegate.swift"; sourceTree = "<group>"; };
+		BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			children = (
 				79A5A62A24E5563A004B5FBB /* CoreDataService.swift */,
 				79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */,
+				BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				79CFE18A24E006B00012837F /* LufthansaApp.xcdatamodeld in Sources */,
 				79CFE20824E2A4810012837F /* CityCell.swift in Sources */,
 				79A5A63424E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift in Sources */,
+				BE89B97524E6D72900A1FC7A /* CountryManagedObject.swift in Sources */,
 				79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */,
 				79A5A62924E446D4004B5FBB /* MapPin.swift in Sources */,
 				79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */,

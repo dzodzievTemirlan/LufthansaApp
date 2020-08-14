@@ -28,18 +28,22 @@ class CoreDataService: CoreDataServiceProtocol {
         return someContext
     }
     
-    func saveDataFromNetwork<Elements>(to entityName: EntityNames, that model: [Elements]) {
-        guard let userEntity = NSEntityDescription.entity(forEntityName: entityName.rawValue, in: context) else { return }
-        let someData = NSManagedObject(entity: userEntity, insertInto: context)
-        someData.setValue(model, forKey: "\(entityName.rawValue)Data")
-        do {
-            try context.save()
-        } catch {
-            print(error)
-        }
+  func saveDataFromNetwork<Elements>(to entityName: EntityNames, that model: [Elements]) {
+    guard let userEntity = NSEntityDescription.entity(forEntityName: entityName.rawValue, in: context) else { return }
+    
+    for country in model {
+      let managedObject = CountryManagedObject(entity: userEntity, insertInto: context)
+      //someData.country = country as! Country
+      managedObject.setValue(country, forKey: "country")
     }
-    func fetchDataFromCoreData<Elements>(to entity: EntityNames, compilition: @escaping ([Elements]?, Error) -> Void) {
+    do {
+      try context.save()
+    } catch {
+      print(error)
     }
-    func updateDataInCoreData<Elements>(to entity: EntityNames, that model: [Elements]) {
-    }
+  }
+  func fetchDataFromCoreData<Elements>(to entity: EntityNames, compilition: @escaping ([Elements]?, Error) -> Void) {
+  }
+  func updateDataInCoreData<Elements>(to entity: EntityNames, that model: [Elements]) {
+  }
 }

@@ -16,6 +16,10 @@ opt_in_rules:
 - force_try/cast/unwrapping
 - weak_delegate
 
+force_cast:
+  severity: warning
+force_try:
+  severity: warning
 
 excluded:
 - Carthage
@@ -27,4 +31,3 @@ excluded:
 
 
 reporter: xcode
-warning_threshold: 30
