@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AirportsEntity" representedClassName="AirportsEntity" syncable="YES">
+        <attribute name="airports" attributeType="Transformable" customClassName="AirportsManagedObject"/>
+    </entity>
+    <entity name="CitiesEntity" representedClassName="CitiesEntity" syncable="YES">
+        <attribute name="cities" attributeType="Transformable" customClassName="CitiesManagedObject"/>
+    </entity>
     <entity name="CountriesEntity" representedClassName="CountriesEntity" syncable="YES">
-        <attribute name="country" attributeType="Transformable" customClassName="CountryManagedObject" storedInTruthFile="YES"/>
+        <attribute name="country" attributeType="Transformable" customClassName="CountryManagedObject"/>
     </entity>
     <elements>
+        <element name="CitiesEntity" positionX="-54" positionY="0" width="128" height="58"/>
         <element name="CountriesEntity" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="AirportsEntity" positionX="-54" positionY="0" width="128" height="58"/>
     </elements>
 </model>

@@ -11,11 +11,16 @@ import UIKit
 class AirportsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: AirportsViewPresenterProtocol?
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.getAirportsFromLocal()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(AirportsCell.self, forCellReuseIdentifier: String(describing: AirportsCell.self))
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.refreshControl = refreshControl
         navBarRightBarButton()
     }
     fileprivate func navBarRightBarButton() {
@@ -28,5 +33,14 @@ class AirportsViewController: UIViewController {
     }
     @objc func showMap() {
         presenter?.showMap()
+    }
+    let refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(pullToRequest), for: .valueChanged)
+        return refreshControl
+    }()
+    @objc func pullToRequest(sender: UIRefreshControl) {
+        presenter?.getAirportsFromNetwork()
+        sender.endRefreshing()
     }
 }

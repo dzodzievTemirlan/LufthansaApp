@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		7908389924E2F187007D2031 /* AirportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389824E2F187007D2031 /* AirportsCell.swift */; };
 		7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389A24E2FDD8007D2031 /* MapViewController.swift */; };
 		790838A124E2FEE6007D2031 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790838A024E2FEE6007D2031 /* MapViewController.xib */; };
+		7987A4B024EAAFB700E91010 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987A4AF24EAAFB700E91010 /* NetworkConnection.swift */; };
+		7987A4B524EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987A4B224EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift */; };
 		79A5A62024E2FF38004B5FBB /* NearesAirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */; };
 		79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62224E2FF58004B5FBB /* MapPresenter.swift */; };
 		79A5A62924E446D4004B5FBB /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A62824E446D4004B5FBB /* MapPin.swift */; };
@@ -26,6 +28,7 @@
 		79A5A63424E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */; };
 		79A5A63624E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */; };
 		79A5A63824E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */; };
+		79C374A524EA96D300A2B4A6 /* CitiesManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C374A324EA96D300A2B4A6 /* CitiesManagedObject.swift */; };
 		79CFE18024E006B00012837F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE17F24E006B00012837F /* AppDelegate.swift */; };
 		79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18124E006B00012837F /* SceneDelegate.swift */; };
 		79CFE18424E006B00012837F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18324E006B00012837F /* MenuViewController.swift */; };
@@ -54,10 +57,13 @@
 		79CFE20824E2A4810012837F /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20724E2A4810012837F /* CityCell.swift */; };
 		79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */; };
 		79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */; };
+		7DA4DAA2BB3D58F6FA23639B /* Pods_LufthansaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB00BBD9FFBCD9F2541175 /* Pods_LufthansaApp.framework */; };
 		BE89B97524E6D72900A1FC7A /* CountryManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63AB00BBD9FFBCD9F2541175 /* Pods_LufthansaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LufthansaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C035D537FC13AAF74DB56E /* Pods-LufthansaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaApp.release.xcconfig"; path = "Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp.release.xcconfig"; sourceTree = "<group>"; };
 		7908388724E2B896007D2031 /* AirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewController.swift; sourceTree = "<group>"; };
 		7908388824E2B896007D2031 /* AirportsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportsViewController.xib; sourceTree = "<group>"; };
 		7908388D24E2B8C4007D2031 /* AirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsModel.swift; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 		7908389824E2F187007D2031 /* AirportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsCell.swift; sourceTree = "<group>"; };
 		7908389A24E2FDD8007D2031 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		790838A024E2FEE6007D2031 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		7987A4AF24EAAFB700E91010 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		7987A4B224EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AirportsEntity+CoreDataProperties.swift"; path = "/Users/temirlandzodziev/Documents/Andersen/Laboratory/LufthansaApp/LufthansaApp/ServiceLayers/CoreData/AirportsEntity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		79A5A61F24E2FF38004B5FBB /* NearesAirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearesAirportsModel.swift; sourceTree = "<group>"; };
 		79A5A62224E2FF58004B5FBB /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		79A5A62824E446D4004B5FBB /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+CountriesViewProtocol.swift"; sourceTree = "<group>"; };
 		79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+CitiesViewProtocol.swift"; sourceTree = "<group>"; };
 		79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+AirportsViewProtocol.swift"; sourceTree = "<group>"; };
+		79C3749924E6F3B600A2B4A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		79C374A324EA96D300A2B4A6 /* CitiesManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CitiesManagedObject.swift; path = /Users/temirlandzodziev/Documents/Andersen/Laboratory/LufthansaApp/LufthansaApp/ServiceLayers/CoreData/CitiesManagedObject.swift; sourceTree = "<absolute>"; };
 		79CFE17C24E006B00012837F /* LufthansaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CFE17F24E006B00012837F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CFE18124E006B00012837F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 		79CFE20724E2A4810012837F /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDataSource.swift"; sourceTree = "<group>"; };
 		79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDelegate.swift"; sourceTree = "<group>"; };
+		AD73F9FD0D05A60807058D19 /* Pods-LufthansaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaApp.debug.xcconfig"; path = "Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,12 +126,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA4DAA2BB3D58F6FA23639B /* Pods_LufthansaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303C415E91CD8E9B79B2AAC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD73F9FD0D05A60807058D19 /* Pods-LufthansaApp.debug.xcconfig */,
+				73C035D537FC13AAF74DB56E /* Pods-LufthansaApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7908388B24E2B89B007D2031 /* AirportsScreenModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +200,14 @@
 			path = MapScreenModule;
 			sourceTree = "<group>";
 		};
+		7987A4B124EAAFBE00E91010 /* NetworkConnection */ = {
+			isa = PBXGroup;
+			children = (
+				7987A4AF24EAAFB700E91010 /* NetworkConnection.swift */,
+			);
+			path = NetworkConnection;
+			sourceTree = "<group>";
+		};
 		79A5A61E24E2FF1A004B5FBB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,8 +250,19 @@
 				79A5A62A24E5563A004B5FBB /* CoreDataService.swift */,
 				79CFE18824E006B00012837F /* LufthansaApp.xcdatamodeld */,
 				BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */,
+				79C374A324EA96D300A2B4A6 /* CitiesManagedObject.swift */,
+				7987A4B224EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		79C3749824E6F3B600A2B4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C3749924E6F3B600A2B4A6 /* SystemConfiguration.framework */,
+				63AB00BBD9FFBCD9F2541175 /* Pods_LufthansaApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		79CFE17324E006AF0012837F = {
@@ -230,6 +270,8 @@
 			children = (
 				79CFE17E24E006B00012837F /* LufthansaApp */,
 				79CFE17D24E006B00012837F /* Products */,
+				79C3749824E6F3B600A2B4A6 /* Frameworks */,
+				303C415E91CD8E9B79B2AAC6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -318,6 +360,7 @@
 			children = (
 				79CFE1DE24E14EBA0012837F /* Network */,
 				79A5A62C24E5563F004B5FBB /* CoreData */,
+				7987A4B124EAAFBE00E91010 /* NetworkConnection */,
 			);
 			path = ServiceLayers;
 			sourceTree = "<group>";
@@ -440,10 +483,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79CFE19324E006B30012837F /* Build configuration list for PBXNativeTarget "LufthansaApp" */;
 			buildPhases = (
+				6D57D09382F71D7D9F1923AE /* [CP] Check Pods Manifest.lock */,
 				79CFE17824E006B00012837F /* Sources */,
 				79CFE17924E006B00012837F /* Frameworks */,
 				79CFE17A24E006B00012837F /* Resources */,
 				79CFE1D924E143910012837F /* ShellScript */,
+				0398B7253E022D360B428833 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -505,6 +550,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0398B7253E022D360B428833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D57D09382F71D7D9F1923AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LufthansaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79CFE1D924E143910012837F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7987A4B524EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift in Sources */,
 				79A5A62B24E5563A004B5FBB /* CoreDataService.swift in Sources */,
 				79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */,
 				79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */,
@@ -548,6 +633,8 @@
 				79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */,
 				79A5A62924E446D4004B5FBB /* MapPin.swift in Sources */,
 				79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */,
+				79C374A524EA96D300A2B4A6 /* CitiesManagedObject.swift in Sources */,
+				7987A4B024EAAFB700E91010 /* NetworkConnection.swift in Sources */,
 				79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */,
 				7908388924E2B896007D2031 /* AirportsViewController.swift in Sources */,
 				7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */,
@@ -703,6 +790,7 @@
 		};
 		79CFE19424E006B30012837F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD73F9FD0D05A60807058D19 /* Pods-LufthansaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -722,6 +810,7 @@
 		};
 		79CFE19524E006B30012837F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C035D537FC13AAF74DB56E /* Pods-LufthansaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

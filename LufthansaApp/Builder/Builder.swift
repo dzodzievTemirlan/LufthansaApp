@@ -27,21 +27,39 @@ class Builder: BuilderProtocol {
         let view = CountriesViewController()
         let dataFetcher = NetworkRequest()
         let coreDataService = CoreDataService()
-        let presenter = CountriesPresenter(view: view, dataFetcher: dataFetcher, coreDataService: coreDataService)
+        let networkConnection = NetworkConnection()
+        let presenter = CountriesPresenter(
+                                            view: view,
+                                            dataFetcher: dataFetcher,
+                                            coreDataService: coreDataService,
+                                            networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }
     func createCitiesViewController() -> UIViewController {
         let view = CitiesViewController()
         let dataFetcher = NetworkRequest()
-        let presenter = CitiesPresenter(view: view, dataFetcher: dataFetcher)
+        let coreDataService = CoreDataService()
+        let networkConnection = NetworkConnection()
+        let presenter = CitiesPresenter(
+                                        view: view,
+                                        dataFetcher: dataFetcher,
+                                        coreDataService: coreDataService,
+                                        networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }
     func createAirportsViewController(router: Router) -> UIViewController {
         let view = AirportsViewController()
         let dataFetcher = NetworkRequest()
-        let presenter = AirportsPresenter(view: view, dataFetcher: dataFetcher, router: router)
+        let coreDataService = CoreDataService()
+        let networkConnection = NetworkConnection()
+        let presenter = AirportsPresenter(
+                                            view: view,
+                                            dataFetcher: dataFetcher,
+                                            router: router,
+                                            coreDataService: coreDataService,
+                                            networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }

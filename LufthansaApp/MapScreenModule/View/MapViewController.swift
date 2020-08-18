@@ -67,8 +67,3 @@ class MapViewController: UIViewController {
         present(alert,animated: true, completion: nil)
     }
 }
-
-
-
-
-

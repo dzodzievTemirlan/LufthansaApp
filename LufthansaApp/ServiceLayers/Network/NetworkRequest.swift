@@ -40,7 +40,7 @@ class NetworkRequest: NetworkRequestProtocol {
                         forHTTPHeaderField: "Accept"
         )
         request.addValue(
-                        "Bearer htcf8sxvdffxw6hxq8cetcvz",
+                        "Bearer qx2y6epauwcsd2vnwfpkuan7",
                         forHTTPHeaderField: "Authorization"
         )
         request.addValue(
