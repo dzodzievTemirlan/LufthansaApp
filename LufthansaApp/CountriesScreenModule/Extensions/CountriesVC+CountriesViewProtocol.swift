@@ -9,10 +9,10 @@
 import Foundation
 
 extension CountriesViewController: CountriesViewProtocol {
-    func success() {
-         tableView.reloadData()
-    }
-    func failure(error: Error) {
-        print(error)
-    }
+  func success() {
+    tableView.reloadData()
+  }
+  func failure(error: Error) {
+    print(error)
+  }
 }

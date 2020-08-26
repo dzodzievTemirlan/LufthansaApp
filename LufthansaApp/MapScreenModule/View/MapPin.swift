@@ -10,16 +10,17 @@ import UIKit
 import MapKit
 
 protocol MapPinProtocol: MKAnnotation {
-    init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String)
+  init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String)
 }
 
 class MapPin: NSObject, MapPinProtocol {
-    var coordinate: CLLocationCoordinate2D
-    var title: String?
-    var subtitle: String?
-    required init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
-        self.coordinate = coordinate
-        self.subtitle = subtitle
-        self.title = title
-    }
+  var coordinate: CLLocationCoordinate2D
+  var title: String?
+  var subtitle: String?
+  
+  required init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
+    self.coordinate = coordinate
+    self.subtitle = subtitle
+    self.title = title
+  }
 }

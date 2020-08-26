@@ -14,8 +14,8 @@ public class AirportsManagedObject: NSManagedObject {
 }
 
 extension AirportsManagedObject {
-    @nonobjc class func fetchRequest() -> NSFetchRequest<AirportsManagedObject> {
-        return NSFetchRequest<AirportsManagedObject>(entityName: "AirportsEntity")
-    }
-    @NSManaged var airports: AirportModel
+  @nonobjc class func fetchRequest() -> NSFetchRequest<AirportsManagedObject> {
+    return NSFetchRequest<AirportsManagedObject>(entityName: "AirportsEntity")
+  }
+  @NSManaged var airports: AirportModel
 }

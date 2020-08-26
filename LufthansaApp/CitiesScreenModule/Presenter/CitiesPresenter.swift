@@ -20,10 +20,11 @@ protocol CitiesViewPresenterProtocol: class {
             coreDataService: CoreDataServiceProtocol,
             networkConnection: NetworkConnectionProtocol
     )
-    var cities: [CityModel]? {get set}
-    var empty: Bool {get set}
     func getCitiesFromLocal()
     func getCitiesFromNetwork()
+    var cities: [CityModel]? {get set}
+    var localStorageIsEmpty: Bool {get set}
+   
 }
 
 class CitiesPresenter: CitiesViewPresenterProtocol {
@@ -32,7 +33,7 @@ class CitiesPresenter: CitiesViewPresenterProtocol {
     var coreDataService: CoreDataServiceProtocol?
     var networkConnection: NetworkConnectionProtocol?
     var cities: [CityModel]?
-    var empty: Bool = true
+    var localStorageIsEmpty: Bool = true
     required init(
                 view: CitiesViewProtocol,
                 dataFetcher: NetworkRequestProtocol,
@@ -49,13 +50,13 @@ class CitiesPresenter: CitiesViewPresenterProtocol {
                                             key: .cities,
                                             to: .cities,
                                             type: CitiesManagedObject.self,
-                                            compilition: { (result, error) in
+                                            compelition: { (result, error) in
             DispatchQueue.main.async {
                 if error == nil {
                     guard let result = result else { return }
                     if !result.isEmpty {
                         var array = [CityModel]()
-                        self.empty = false
+                        self.localStorageIsEmpty = false
                         for city in result {
                             array.append(city.cities)
                         }
@@ -67,7 +68,7 @@ class CitiesPresenter: CitiesViewPresenterProtocol {
         })
     }
     func getCitiesFromNetwork() {
-        if empty {
+        if localStorageIsEmpty {
             self.networkConnection?.checkInternetConnection(complition: { (check) in
                 if check {
                     self.dataFetcher?.fetchJSONData(

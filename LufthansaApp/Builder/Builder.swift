@@ -28,11 +28,10 @@ class Builder: BuilderProtocol {
         let dataFetcher = NetworkRequest()
         let coreDataService = CoreDataService()
         let networkConnection = NetworkConnection()
-        let presenter = CountriesPresenter(
-                                            view: view,
-                                            dataFetcher: dataFetcher,
-                                            coreDataService: coreDataService,
-                                            networkConnection: networkConnection)
+        let presenter = CountriesPresenter(view: view,
+                                           dataFetcher: dataFetcher,
+                                           coreDataService: coreDataService,
+                                           networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }
@@ -41,8 +40,7 @@ class Builder: BuilderProtocol {
         let dataFetcher = NetworkRequest()
         let coreDataService = CoreDataService()
         let networkConnection = NetworkConnection()
-        let presenter = CitiesPresenter(
-                                        view: view,
+        let presenter = CitiesPresenter(view: view,
                                         dataFetcher: dataFetcher,
                                         coreDataService: coreDataService,
                                         networkConnection: networkConnection)
@@ -54,19 +52,21 @@ class Builder: BuilderProtocol {
         let dataFetcher = NetworkRequest()
         let coreDataService = CoreDataService()
         let networkConnection = NetworkConnection()
-        let presenter = AirportsPresenter(
-                                            view: view,
-                                            dataFetcher: dataFetcher,
-                                            router: router,
-                                            coreDataService: coreDataService,
-                                            networkConnection: networkConnection)
+        let presenter = AirportsPresenter(view: view,
+                                          dataFetcher: dataFetcher,
+                                          router: router,
+                                          coreDataService: coreDataService,
+                                          networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }
     func createMapViewController() -> UIViewController {
         let view = MapViewController()
         let dataFetcher = NetworkRequest()
-        let presenter = MapPresenter(view: view, dataFetcher: dataFetcher)
+        let networkConnection = NetworkConnection()
+        let presenter = MapPresenter(view: view,
+                                     dataFetcher: dataFetcher,
+                                     networkConnection: networkConnection)
         view.presenter = presenter
         return view
     }

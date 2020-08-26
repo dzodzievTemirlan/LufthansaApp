@@ -7,160 +7,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F0B74D87-740F-4D63-808C-3EB257476283"
+            uuid = "2BA11E26-35DA-4B69-B906-5C80D2A17C25"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/CountriesScreenModule/Extensions/CountriesVC+CountriesViewProtocol.swift"
+            filePath = "LufthansaApp/ServiceLayers/Network/NetworkGetToken.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "success()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "postRequestGetToken(complition:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2BA11E26-35DA-4B69-B906-5C80D2A17C25 - ed1bc5a0c2214d6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LufthansaApp.NetworkGetToken.postRequestGetToken() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "LufthansaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temirlandzodziev/Documents/Andersen/Laboratory/LufthansaApp/LufthansaApp/ServiceLayers/Network/NetworkGetToken.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2117">
+               </Location>
+               <Location
+                  uuid = "2BA11E26-35DA-4B69-B906-5C80D2A17C25 - 448866fbf4a0d474"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LufthansaApp.NetworkGetToken.postRequestGetToken() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "LufthansaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/temirlandzodziev/Documents/Andersen/Laboratory/LufthansaApp/LufthansaApp/ServiceLayers/Network/NetworkGetToken.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41BEF3F5-D766-45D2-91F7-D71FBA250A84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LufthansaApp/ServiceLayers/Network/NetworkGetToken.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "postRequestGetToken(complition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA1B5DAA-7998-4C6A-9887-46CC6BA58BF1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/CountriesScreenModule/Presenter/CountriesPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "getCountriesFromLocal()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5FD825AB-46FB-41EB-9136-5E7D709AA2B0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/ServiceLayers/CoreData/CoreDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "fetchDataFromCoreData(key:to:type:compilition:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BFCB890D-F163-4D3F-9CDC-4945753AFFCE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/ServiceLayers/CoreData/CountryManagedObject.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "fetchRequest()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7046E44A-D80C-4852-858F-1A7129FF499C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/ServiceLayers/CoreData/CoreDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "fetchDataFromCoreData(key:to:type:compilition:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3915CF46-B261-4436-9236-5EB0AB83D96C"
+            uuid = "31DFCF52-8243-4069-92C8-FCD7A21422FD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/ServiceLayers/CoreData/CountryManagedObject.swift"
+            filePath = "LufthansaApp/ServiceLayers/Network/NetworkConnection/NetworkConnection.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "fetchRequest()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "checkInternetConnection(complition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89D29F21-C868-4081-921D-6DD6D063D7FA"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/ServiceLayers/CoreData/CoreDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "fetchDataFromCoreData(key:to:type:compilition:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E81779A6-20F1-4FED-90D5-694750449A8E"
+            uuid = "2DD04EE8-364E-4CA9-A435-07C21FFB7E07"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/CountriesScreenModule/Presenter/CountriesPresenter.swift"
+            filePath = "LufthansaApp/ServiceLayers/Network/NetworkConnection/NetworkConnection.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "getCountriesFromLocal()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "checkInternetConnection(complition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E7979B18-6FB8-49F9-BEDA-8AFC45BC37DE"
+            uuid = "163C8C87-2C34-4C0B-B7D1-6886037ADA6F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/CountriesScreenModule/Presenter/CountriesPresenter.swift"
+            filePath = "LufthansaApp/ServiceLayers/Network/NetworkConnection/NetworkConnection.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "getCountriesFromLocal()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "checkInternetConnection(complition:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EF4D35BA-8773-4682-8556-B504E3E3D3CF"
-            shouldBeEnabled = "No"
+            uuid = "02C13C34-E5CC-4E69-988D-FB9A80DB7754"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LufthansaApp/CitiesScreenModule/Presenter/CitiesPresenter.swift"
+            filePath = "LufthansaApp/MapScreenModule/Extension/MapVC+CLLocationManagerDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "getCitiesFromLocal()"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

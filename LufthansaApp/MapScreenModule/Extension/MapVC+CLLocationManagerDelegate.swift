@@ -10,18 +10,18 @@ import UIKit
 import MapKit
 
 extension MapViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last?.coordinate {
-            presenter?.latitute = location.latitude
-            presenter?.logitude = location.longitude
-            let radius: CLLocationDistance = 35000
-            let region = MKCoordinateRegion(center: location,
-                                            latitudinalMeters: radius,
-                                            longitudinalMeters: radius)
-            mapView.setRegion(region, animated: true)
-        }
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    if let location = locations.last?.coordinate {
+      presenter?.latitute = location.latitude
+      presenter?.logitude = location.longitude
+      let radius: CLLocationDistance = 35000
+      let region = MKCoordinateRegion(center: location,
+                                      latitudinalMeters: radius,
+                                      longitudinalMeters: radius)
+      mapView.setRegion(region, animated: true)
     }
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        checkAuthorization()
-    }
+  }
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    checkAuthorization()
+  }
 }

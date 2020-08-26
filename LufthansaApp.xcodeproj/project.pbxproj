@@ -11,7 +11,6 @@
 		7908388A24E2B896007D2031 /* AirportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7908388824E2B896007D2031 /* AirportsViewController.xib */; };
 		7908388E24E2B8C4007D2031 /* AirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908388D24E2B8C4007D2031 /* AirportsModel.swift */; };
 		7908389024E2B8CD007D2031 /* AirportsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908388F24E2B8CD007D2031 /* AirportsPresenter.swift */; };
-		7908389424E2F0E7007D2031 /* AirportsVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */; };
 		7908389724E2F100007D2031 /* AirportsVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */; };
 		7908389924E2F187007D2031 /* AirportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389824E2F187007D2031 /* AirportsCell.swift */; };
 		7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7908389A24E2FDD8007D2031 /* MapViewController.swift */; };
@@ -29,6 +28,7 @@
 		79A5A63624E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */; };
 		79A5A63824E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */; };
 		79C374A524EA96D300A2B4A6 /* CitiesManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C374A324EA96D300A2B4A6 /* CitiesManagedObject.swift */; };
+		79C626C924F3C2A300A515A0 /* NetworkGetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C626C824F3C2A300A515A0 /* NetworkGetToken.swift */; };
 		79CFE18024E006B00012837F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE17F24E006B00012837F /* AppDelegate.swift */; };
 		79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18124E006B00012837F /* SceneDelegate.swift */; };
 		79CFE18424E006B00012837F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE18324E006B00012837F /* MenuViewController.swift */; };
@@ -41,22 +41,20 @@
 		79CFE1D524E12FAD0012837F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1D424E12FAD0012837F /* MenuView.xib */; };
 		79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1DF24E14FDE0012837F /* CountriesModel.swift */; };
 		79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E124E15C490012837F /* MenuCell.swift */; };
-		79CFE1E424E15EBA0012837F /* MenuVC+CVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */; };
-		79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */; };
 		79CFE1E924E1725C0012837F /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1E824E1725B0012837F /* CountriesViewController.swift */; };
 		79CFE1EE24E1729C0012837F /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1ED24E1729C0012837F /* CountriesPresenter.swift */; };
 		79CFE1F124E172B20012837F /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1F024E172B20012837F /* CountriesView.xib */; };
 		79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F224E19EC60012837F /* NetworkRequest.swift */; };
 		79CFE1F524E1AE270012837F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F424E1AE270012837F /* CountryCell.swift */; };
-		79CFE1F724E1AE780012837F /* CountriesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */; };
 		79CFE1FA24E2839C0012837F /* CountriesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */; };
 		79CFE1FD24E28A2B0012837F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE1FB24E28A2B0012837F /* CitiesViewController.swift */; };
 		79CFE1FE24E28A2B0012837F /* CitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79CFE1FC24E28A2B0012837F /* CitiesViewController.xib */; };
 		79CFE20224E28A5D0012837F /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20124E28A5D0012837F /* CitiesPresenter.swift */; };
 		79CFE20424E28A750012837F /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20324E28A750012837F /* CitiesModel.swift */; };
 		79CFE20824E2A4810012837F /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20724E2A4810012837F /* CityCell.swift */; };
-		79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */; };
 		79CFE20D24E2A6000012837F /* CitiesVC+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */; };
+		79D66FD924F6770A002B82FA /* MenuVC+CVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D66FD824F6770A002B82FA /* MenuVC+CVDelegate.swift */; };
+		79D66FDB24F68DE4002B82FA /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D66FDA24F68DE3002B82FA /* TokenModel.swift */; };
 		7DA4DAA2BB3D58F6FA23639B /* Pods_LufthansaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB00BBD9FFBCD9F2541175 /* Pods_LufthansaApp.framework */; };
 		BE89B97524E6D72900A1FC7A /* CountryManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +66,6 @@
 		7908388824E2B896007D2031 /* AirportsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportsViewController.xib; sourceTree = "<group>"; };
 		7908388D24E2B8C4007D2031 /* AirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsModel.swift; sourceTree = "<group>"; };
 		7908388F24E2B8CD007D2031 /* AirportsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsPresenter.swift; sourceTree = "<group>"; };
-		7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+TVDataSource.swift"; sourceTree = "<group>"; };
 		7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+TVDelegate.swift"; sourceTree = "<group>"; };
 		7908389824E2F187007D2031 /* AirportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsCell.swift; sourceTree = "<group>"; };
 		7908389A24E2FDD8007D2031 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +84,7 @@
 		79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportsVC+AirportsViewProtocol.swift"; sourceTree = "<group>"; };
 		79C3749924E6F3B600A2B4A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		79C374A324EA96D300A2B4A6 /* CitiesManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CitiesManagedObject.swift; path = /Users/temirlandzodziev/Documents/Andersen/Laboratory/LufthansaApp/LufthansaApp/ServiceLayers/CoreData/CitiesManagedObject.swift; sourceTree = "<absolute>"; };
+		79C626C824F3C2A300A515A0 /* NetworkGetToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGetToken.swift; sourceTree = "<group>"; };
 		79CFE17C24E006B00012837F /* LufthansaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CFE17F24E006B00012837F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79CFE18124E006B00012837F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,22 +99,20 @@
 		79CFE1D424E12FAD0012837F /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		79CFE1DF24E14FDE0012837F /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
 		79CFE1E124E15C490012837F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuVC+CVDataSource.swift"; sourceTree = "<group>"; };
-		79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuVC+CVDelegate.swift"; sourceTree = "<group>"; };
 		79CFE1E824E1725B0012837F /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		79CFE1ED24E1729C0012837F /* CountriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
 		79CFE1F024E172B20012837F /* CountriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesView.xib; sourceTree = "<group>"; };
 		79CFE1F224E19EC60012837F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		79CFE1F424E1AE270012837F /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
-		79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+TVDataSource.swift"; sourceTree = "<group>"; };
 		79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountriesVC+TVDelegate.swift"; sourceTree = "<group>"; };
 		79CFE1FB24E28A2B0012837F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		79CFE1FC24E28A2B0012837F /* CitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesViewController.xib; sourceTree = "<group>"; };
 		79CFE20124E28A5D0012837F /* CitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPresenter.swift; sourceTree = "<group>"; };
 		79CFE20324E28A750012837F /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
 		79CFE20724E2A4810012837F /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
-		79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDataSource.swift"; sourceTree = "<group>"; };
 		79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesVC+TVDelegate.swift"; sourceTree = "<group>"; };
+		79D66FD824F6770A002B82FA /* MenuVC+CVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuVC+CVDelegate.swift"; sourceTree = "<group>"; };
+		79D66FDA24F68DE3002B82FA /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		AD73F9FD0D05A60807058D19 /* Pods-LufthansaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaApp.debug.xcconfig"; path = "Target Support Files/Pods-LufthansaApp/Pods-LufthansaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BE89B97424E6D72900A1FC7A /* CountryManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +178,6 @@
 		7908389524E2F0EB007D2031 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7908389324E2F0E6007D2031 /* AirportsVC+TVDataSource.swift */,
 				7908389624E2F100007D2031 /* AirportsVC+TVDelegate.swift */,
 				79A5A63724E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift */,
 			);
@@ -321,6 +316,7 @@
 		79CFE1A024E08EF00012837F /* MenuScreenModule */ = {
 			isa = PBXGroup;
 			children = (
+				79D66FDC24F68DE9002B82FA /* Model */,
 				79CFE1A124E08F0C0012837F /* View */,
 				79CFE1A224E08F100012837F /* Presenter */,
 				79CFE1E524E15EBF0012837F /* Extensions */,
@@ -360,7 +356,6 @@
 			children = (
 				79CFE1DE24E14EBA0012837F /* Network */,
 				79A5A62C24E5563F004B5FBB /* CoreData */,
-				7987A4B124EAAFBE00E91010 /* NetworkConnection */,
 			);
 			path = ServiceLayers;
 			sourceTree = "<group>";
@@ -368,7 +363,8 @@
 		79CFE1DE24E14EBA0012837F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				79CFE1F224E19EC60012837F /* NetworkRequest.swift */,
+				7987A4B124EAAFBE00E91010 /* NetworkConnection */,
+				79D66FD724F6399E002B82FA /* NetworkRequests */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -376,8 +372,7 @@
 		79CFE1E524E15EBF0012837F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				79CFE1E324E15EBA0012837F /* MenuVC+CVDataSource.swift */,
-				79CFE1E624E162460012837F /* MenuVC+CVDelegate.swift */,
+				79D66FD824F6770A002B82FA /* MenuVC+CVDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,7 +418,6 @@
 			isa = PBXGroup;
 			children = (
 				79A5A63324E66B93004B5FBB /* CountriesVC+CountriesViewProtocol.swift */,
-				79CFE1F624E1AE780012837F /* CountriesVC+TVDataSource.swift */,
 				79CFE1F924E2839B0012837F /* CountriesVC+TVDelegate.swift */,
 			);
 			path = Extensions;
@@ -470,10 +464,26 @@
 			isa = PBXGroup;
 			children = (
 				79A5A63524E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift */,
-				79CFE20924E2A4DB0012837F /* CitiesVC+TVDataSource.swift */,
 				79CFE20C24E2A6000012837F /* CitiesVC+TVDelegate.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79D66FD724F6399E002B82FA /* NetworkRequests */ = {
+			isa = PBXGroup;
+			children = (
+				79CFE1F224E19EC60012837F /* NetworkRequest.swift */,
+				79C626C824F3C2A300A515A0 /* NetworkGetToken.swift */,
+			);
+			path = NetworkRequests;
+			sourceTree = "<group>";
+		};
+		79D66FDC24F68DE9002B82FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79D66FDA24F68DE3002B82FA /* TokenModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,15 +623,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C626C924F3C2A300A515A0 /* NetworkGetToken.swift in Sources */,
+				79D66FD924F6770A002B82FA /* MenuVC+CVDelegate.swift in Sources */,
 				7987A4B524EBC99300E91010 /* AirportsEntity+CoreDataProperties.swift in Sources */,
 				79A5A62B24E5563A004B5FBB /* CoreDataService.swift in Sources */,
 				79CFE1F324E19EC60012837F /* NetworkRequest.swift in Sources */,
 				79CFE1E024E14FDE0012837F /* CountriesModel.swift in Sources */,
-				79CFE20A24E2A4DB0012837F /* CitiesVC+TVDataSource.swift in Sources */,
 				79A5A62324E2FF58004B5FBB /* MapPresenter.swift in Sources */,
 				79CFE1F524E1AE270012837F /* CountryCell.swift in Sources */,
 				79A5A63024E667D6004B5FBB /* MapVC+MKMapViewDelegate.swift in Sources */,
-				7908389424E2F0E7007D2031 /* AirportsVC+TVDataSource.swift in Sources */,
 				7908389024E2B8CD007D2031 /* AirportsPresenter.swift in Sources */,
 				79A5A63824E66C1C004B5FBB /* AirportsVC+AirportsViewProtocol.swift in Sources */,
 				79CFE1FD24E28A2B0012837F /* CitiesViewController.swift in Sources */,
@@ -635,11 +645,9 @@
 				79CFE1E224E15C4A0012837F /* MenuCell.swift in Sources */,
 				79C374A524EA96D300A2B4A6 /* CitiesManagedObject.swift in Sources */,
 				7987A4B024EAAFB700E91010 /* NetworkConnection.swift in Sources */,
-				79CFE1E724E162460012837F /* MenuVC+CVDelegate.swift in Sources */,
 				7908388924E2B896007D2031 /* AirportsViewController.swift in Sources */,
 				7908389B24E2FDD8007D2031 /* MapViewController.swift in Sources */,
 				7908388E24E2B8C4007D2031 /* AirportsModel.swift in Sources */,
-				79CFE1E424E15EBA0012837F /* MenuVC+CVDataSource.swift in Sources */,
 				79A5A62E24E66760004B5FBB /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				79CFE1FA24E2839C0012837F /* CountriesVC+TVDelegate.swift in Sources */,
 				79CFE19B24E08B750012837F /* Router.swift in Sources */,
@@ -652,10 +660,10 @@
 				79CFE20424E28A750012837F /* CitiesModel.swift in Sources */,
 				79CFE18424E006B00012837F /* MenuViewController.swift in Sources */,
 				7908389724E2F100007D2031 /* AirportsVC+TVDelegate.swift in Sources */,
+				79D66FDB24F68DE4002B82FA /* TokenModel.swift in Sources */,
 				79CFE18024E006B00012837F /* AppDelegate.swift in Sources */,
 				79A5A63624E66BE6004B5FBB /* CitiesVC+CitiesViewProtocol.swift in Sources */,
 				79CFE18224E006B00012837F /* SceneDelegate.swift in Sources */,
-				79CFE1F724E1AE780012837F /* CountriesVC+TVDataSource.swift in Sources */,
 				79CFE1D124E12E060012837F /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

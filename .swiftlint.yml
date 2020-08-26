@@ -4,10 +4,9 @@ disabled_rules:
 - control_statement
 - function_body_length
 - cyclomatic_complexity
-- trailing_whitespacea
+- trailing_whitespace
 
 line_length: 120
-
 
 opt_in_rules:
 - empty_count

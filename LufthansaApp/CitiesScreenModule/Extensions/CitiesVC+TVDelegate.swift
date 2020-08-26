@@ -9,7 +9,8 @@
 import UIKit
 
 extension CitiesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
-    }
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    let height: CGFloat = 50
+    return height
+  }
 }

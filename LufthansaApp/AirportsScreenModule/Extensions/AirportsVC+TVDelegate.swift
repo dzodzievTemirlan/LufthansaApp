@@ -9,7 +9,8 @@
 import UIKit
 
 extension AirportsViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    let height: CGFloat = 80
+    return height
+  }
 }
