@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="LufthansaApp" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="oDg-pU-h0D" id="9aK-qT-tlx"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NYz-0e-ENb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oDg-pU-h0D">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="oDg-pU-h0D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6yO-SH-g7Z"/>
+                <constraint firstItem="oDg-pU-h0D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qzc-75-dLb"/>
+                <constraint firstItem="oDg-pU-h0D" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bd4-NL-tNg"/>
+                <constraint firstAttribute="bottom" secondItem="oDg-pU-h0D" secondAttribute="bottom" id="rRG-ws-GtP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </view>
+    </objects>
+</document>

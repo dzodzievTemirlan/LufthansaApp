@@ -1,0 +1,31 @@
+disabled_rules:
+- colon
+- comma
+- control_statement
+- function_body_length
+- cyclomatic_complexity
+- trailing_whitespace
+
+line_length: 120
+
+opt_in_rules:
+- empty_count
+- missing_docs
+- nesting
+- weak_delegate
+
+force_cast:
+  severity: warning
+force_try:
+  severity: warning
+
+excluded:
+- Carthage
+- Pods
+- LufthansaApp/Delegates/AppDelegate.swift
+- LufthansaApp/Delegates/SceneDelegate.swift
+- Source/ExcludedFolder
+- Source/ExcludedFile.swift
+
+
+reporter: xcode
